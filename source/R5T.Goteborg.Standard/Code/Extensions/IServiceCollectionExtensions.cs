@@ -14,7 +14,7 @@ namespace R5T.Goteborg.Standard
         public static IServiceCollection AddGitHubOperator(this IServiceCollection services)
         {
             services
-                .AddGitHubAuthentication()
+                .AddGitHubAuthenticationOptions()
                 .AddGitHubConfiguration()
                 .AddDefaultOctokitGitHubOperatorServices<ConfigurationBasedProductHeaderValueProvider>()
                 ;
